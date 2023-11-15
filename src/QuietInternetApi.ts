@@ -1,5 +1,6 @@
 import {
   ApiV1PostsGet200Response,
+  ApiV1PostsSlugGet200Response,
   Configuration,
   PostsApi,
 } from "./types/typescript-fetch";
@@ -39,6 +40,17 @@ class QuietInternetApi {
     // Call the API's get method to retrieve posts
     const postsPromise = this.api.apiV1PostsGet();
     return postsPromise;
+  }
+
+  /**
+   * Retrieves a specific post from the Quiet Internet service based on the provided slug.
+   * @see https://catnose99.github.io/quiet-internet-api-docs/#tag/posts/paths/~1api~1v1~1posts~1%7Bslug%7D/get
+   *
+   * @param slug - The unique identifier (slug) of the post.
+   * @returns A promise that resolves to the response containing the specified post.
+   */
+  async getPost(slug: string): Promise<ApiV1PostsSlugGet200Response> {
+    return this.api.apiV1PostsSlugGet({ slug });
   }
 }
 
