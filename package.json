@@ -1,7 +1,7 @@
 {
-  "name": "@ryohidaka/npm-package-template",
+  "name": "quiet-internet-api",
   "version": "0.1.0",
-  "description": "Minimum configuration template for publishing packages to npm.",
+  "description": "しずかなインターネットのAPIラッパー",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
@@ -12,14 +12,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ryohidaka/npm-package-template.git"
+    "url": "git+https://github.com/ryohidaka/quiet-internet-api.git"
   },
   "author": "ryohidaka",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ryohidaka/npm-package-template/issues"
+    "url": "https://github.com/ryohidaka/quiet-internet-api/issues"
   },
-  "homepage": "https://github.com/ryohidaka/npm-package-template#readme",
+  "homepage": "https://github.com/ryohidaka/quiet-internet-api#readme",
   "devDependencies": {
     "@types/jest": "^29.5.8",
     "@typescript-eslint/eslint-plugin": "^6.11.0",
