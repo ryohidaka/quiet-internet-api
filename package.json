@@ -8,7 +8,8 @@
     "build": "tsc",
     "prepare": "husky install",
     "test": "npx jest",
-    "format": "npx prettier . --write"
+    "format": "npx prettier . --write",
+    "generate-typescript-fetch": "openapi-generator-cli generate -g typescript-fetch -i ./docs/openapi.yaml -o ./types/typescript-fetch"
   },
   "repository": {
     "type": "git",
