@@ -22,3 +22,7 @@ jest.config.js
 
 # API Documents
 docs
+openapitools.json
+
+# Environment
+.env.example
