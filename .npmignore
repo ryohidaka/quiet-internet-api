@@ -1,0 +1,20 @@
+/node_modules
+/src
+tsconfig.json
+
+## Tests
+jest.config.js
+/tests
+
+## Prettier
+.prettierignore
+.prettierrc.json
+
+## ESLint
+.eslintrc.json
+
+#Git hooks
+.husky/
+
+## GitHub
+.github
