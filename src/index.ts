@@ -1,1 +1,1 @@
-export * from "./Greeter";
+export * from "./QuietInternetApi";
