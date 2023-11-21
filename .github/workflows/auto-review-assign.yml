@@ -1,0 +1,15 @@
+name: Auto Assign Reveiwers Action
+
+on:
+  pull_request:
+    types: [opened, closed]
+
+jobs:
+  assign:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: hkusu/review-assign-action@v1.0.0
+        with:
+          assignees: ${{ github.actor }}
+          reviewers: ryohidaka
+          merged-comment: "This PR was merged. Thanks for your review :bowing_man: <reviewers>"
