@@ -28,7 +28,3 @@ jobs:
           npm version patch --message "Bump version to %s"
 
           git push
-
-  call-workflow:
-    needs: [on-success]
-    uses: ./.github/workflows/release.yml
