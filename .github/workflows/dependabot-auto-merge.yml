@@ -12,12 +12,22 @@ jobs:
     if: ${{ github.actor == 'dependabot[bot]' }}
 
     steps:
+      - uses: actions/checkout@v3
+
       - name: Dependabot metadata
         id: metadata
 
         uses: dependabot/fetch-metadata@v1.1.1
         with:
           github-token: "${{ secrets.GITHUB_TOKEN }}"
+
+      - name: Add commit for release
+        run: |
+          git config --local user.email "49699333+dependabot[bot]@users.noreply.github.com"
+          git config --local user.name "dependabot[bot]"
+          git commit --allow-empty -m "fix: Bump the dependencies."
+        env:
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Enable auto-merge for Dependabot PRs
 
