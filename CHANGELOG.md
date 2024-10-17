@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.29](https://github.com/ryohidaka/quiet-internet-api/compare/v0.1.28...v0.1.29) (2024-10-17)
+
+
+### Bug Fixes
+
+* dependabot-auto-merge.yml ([f90b206](https://github.com/ryohidaka/quiet-internet-api/commit/f90b2064cda207879e6aaa69f0e40a5aeda9fc1b))
+
 ## [0.1.28](https://github.com/ryohidaka/quiet-internet-api/compare/v0.1.27...v0.1.28) (2024-03-05)
 
 
